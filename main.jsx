@@ -1,9 +1,8 @@
 import App from './App.jsx';
-import Home from './pages/Home';
-import Signup from './pages/Signup';
-import Login from './pages/Login';
-import SingleThought from './pages/SingleThought';
-import Profile from './pages/Profile';
+import WorkoutList from './pages/WorkoutList';
+import WorkoutDetail from './pages/WorkoutDetail';
+import ExerciseList from './pages/ExerciseList';
+import ExerciseDetail from './pages/ExerciseDetail';
 import ErrorPage from './pages/ErrorPage';
 
 const router = createBrowserRouter([
@@ -14,22 +13,16 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />
+        element: <WorkoutList />
       }, {
-        path: '/login',
-        element: <Login />
+        path: '/workouts/:workoutId',
+        element: <WorkoutDetail />
       }, {
-        path: '/signup',
-        element: <Signup />
+        path: '/exercises',
+        element: <ExerciseList />
       }, {
-        path: '/profiles/:username',
-        element: <Profile />
-      }, {
-        path: '/me',
-        element: <Profile />
-      }, {
-        path: '/thoughts/:thoughtId',
-        element: <SingleThought />
+        path: '/exercises/:exerciseId',
+        element: <ExerciseDetail />
       }
     ]
   },
