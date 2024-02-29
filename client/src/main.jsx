@@ -4,8 +4,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from './App.jsx';
 import WorkoutList from './pages/WorkoutList';
 import WorkoutDetail from './pages/WorkoutDetail';
-// import ExerciseList from './pages/ExerciseList';
-// import ExerciseDetail from './pages/ExerciseDetail';
+import ExerciseList from './pages/ExerciseList';
+import ExerciseDetail from './pages/ExerciseDetail';
 // import ErrorPage from './pages/ErrorPage';
 
 const router = createBrowserRouter([
@@ -22,13 +22,13 @@ const router = createBrowserRouter([
         path: '/workouts/:workoutId',
         element: <WorkoutDetail />
        }, 
-        //{
-      //   path: '/exercises',
-      //   element: <ExerciseList />
-      // }, {
-      //   path: '/exercises/:exerciseId',
-      //   element: <ExerciseDetail />
-      // }
+        {
+        path: '/exercises',
+        element: <ExerciseList />
+      }, {
+        path: '/exercises/:exerciseId',
+        element: <ExerciseDetail />
+      }
     ]
   },
 ]);
