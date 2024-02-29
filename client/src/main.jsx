@@ -5,7 +5,7 @@ import App from './App.jsx';
 import WorkoutList from './pages/WorkoutList';
 import WorkoutDetail from './pages/WorkoutDetail';
 import ExerciseList from './pages/ExerciseList';
-import ExerciseDetail from './pages/ExerciseDetail';
+import ExerciseDetails from './pages/ExerciseDetails';
 // import ErrorPage from './pages/ErrorPage';
 
 const router = createBrowserRouter([
@@ -27,11 +27,12 @@ const router = createBrowserRouter([
         element: <ExerciseList />
       }, {
         path: '/exercises/:exerciseId',
-        element: <ExerciseDetail />
+        element: <ExerciseDetails />
       }
     ]
   },
 ]);
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
