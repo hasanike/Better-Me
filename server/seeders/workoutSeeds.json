@@ -1,0 +1,160 @@
+[
+  {
+    "date": "2024-02-29T12:34:56.789Z",
+    "exercises": [
+      {
+        "name": "Push-up",
+        "sets": 3,
+        "reps": 15,
+        "weight": null,
+        "duration": null
+      },
+      {
+        "name": "Squat",
+        "sets": 4,
+        "reps": 12,
+        "weight": 50,
+        "duration": null
+      }
+    ],
+    "notes": "A good workout session!"
+  },
+  {
+    "date": "2024-02-29T12:34:56.789Z",
+    "exercises": [
+      {
+        "name": "Bench Press",
+        "sets": 5,
+        "reps": 10,
+        "weight": 75,
+        "duration": null
+      },
+      {
+        "name": "Deadlift",
+        "sets": 3,
+        "reps": 8,
+        "weight": 100,
+        "duration": null
+      }
+    ],
+    "notes": "Focused on upper body strength!"
+  },
+  {
+    "date": "2024-02-29T12:34:56.789Z",
+    "exercises": [
+      {
+        "name": "Running",
+        "sets": 1,
+        "reps": null,
+        "weight": null,
+        "duration": 30
+      },
+      {
+        "name": "Yoga",
+        "sets": 1,
+        "reps": null,
+        "weight": null,
+        "duration": 45
+      }
+    ],
+    "notes": "Cardio and flexibility workout."
+  },
+  {
+    "date": "2024-02-29T12:34:56.789Z",
+    "exercises": [
+      {
+        "name": "Cycling",
+        "sets": 1,
+        "reps": null,
+        "weight": null,
+        "duration": 60
+      }
+    ],
+    "notes": "Outdoor cycling for endurance."
+  },
+  {
+    "date": "2024-02-29T12:34:56.789Z",
+    "exercises": [
+      {
+        "name": "Plank",
+        "sets": 3,
+        "reps": null,
+        "weight": null,
+        "duration": 60
+      },
+      {
+        "name": "Sit-ups",
+        "sets": 3,
+        "reps": 20,
+        "weight": null,
+        "duration": null
+      }
+    ],
+    "notes": "Core workout routine."
+  },
+  {
+    "date": "2024-02-29T12:34:56.789Z",
+    "exercises": [
+      {
+        "name": "Jump Rope",
+        "sets": 4,
+        "reps": 100,
+        "weight": null,
+        "duration": null
+      }
+    ],
+    "notes": "High-intensity cardio with jump rope."
+  },
+  {
+    "date": "2024-02-29T12:34:56.789Z",
+    "exercises": [
+      {
+        "name": "Swimming",
+        "sets": 2,
+        "reps": null,
+        "weight": null,
+        "duration": 45
+      }
+    ],
+    "notes": "Swimming laps for full-body workout."
+  },
+  {
+    "date": "2024-02-29T12:34:56.789Z",
+    "exercises": [
+      {
+        "name": "Rowing",
+        "sets": 3,
+        "reps": null,
+        "weight": 80,
+        "duration": 15
+      }
+    ],
+    "notes": "Indoor rowing for upper body strength."
+  },
+  {
+    "date": "2024-02-29T12:34:56.789Z",
+    "exercises": [
+      {
+        "name": "Meditation",
+        "sets": 1,
+        "reps": null,
+        "weight": null,
+        "duration": 20
+      }
+    ],
+    "notes": "Mindfulness and relaxation session."
+  },
+  {
+    "date": "2024-02-29T12:34:56.789Z",
+    "exercises": [
+      {
+        "name": "Boxing",
+        "sets": 5,
+        "reps": null,
+        "weight": null,
+        "duration": 30
+      }
+    ],
+    "notes": "Boxing drills for cardio and strength."
+  }
+]
