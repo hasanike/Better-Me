@@ -1,7 +1,7 @@
 const db = require('../config/connection');
-const { User, Excercise } = require('../models');
+const { User, Workout } = require('../models');
 const userSeeds = require('./userSeeds.json');
-const workoutseeds = require('./workoutseeds.json');
+const workoutSeeds = require('./workoutSeeds.json');
 const cleanDB = require('./cleanDB');
 
 db.once('open', async () => {
@@ -10,12 +10,12 @@ db.once('open', async () => {
 
     await cleanDB('User', 'users');
 
-    await User.create(userSeeds);
+    const users = await User.create(userSeeds);
 
-    for (let i = 0; i < workoutseeds.length; i++) {
-      const { _id, thoughtAuthor } = await Workout.create(workoutseeds[i]);
+    for (let i = 0; i < workoutSeeds.length; i++) {
+      const { _id } = await Workout.create(workoutSeeds[i]);
       const user = await User.findOneAndUpdate(
-        { username: thoughtAuthor },
+        { _id: users[Math.floor(Math.random() * users.length)]._id},
         {
           $addToSet: {
             workouts: _id,
