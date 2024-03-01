@@ -41,29 +41,6 @@ const startApolloServer = async () => {
   });
 };
 
-const userContentSchema = new mongoose.Schema({
-  date: { type: Date, required: true },
-  exercises: [{ name: String, sets: Number, reps: Number, weight: Number, duration: Number }],
-  notes: String,
-});
-
-const UserContent = mongoose.model('UserContent', userContentSchema);
-
-// POST route to allow users to post their content
-app.post('/api/user-content', async (req, res) => {
-  const { date, exercises, notes } = req.body;
-
-  try {
-    const newContent = new UserContent({ date, exercises, notes });
-    const savedContent = await newContent.save();
-
-    res.status(201).json({ message: 'Content posted successfully.', content: savedContent });
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: 'Internal server error.' });
-  }
-});
-
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });

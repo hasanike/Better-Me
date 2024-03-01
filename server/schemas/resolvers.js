@@ -47,7 +47,7 @@ const resolvers = {
 
       return { token, user };
     },
-    addworkout: async (parent, { workoutText }, context) => {
+    addWorkout: async (parent, { workoutText }, context) => {
       if (context.user) {
         const workout = await Workout.create({
           workoutText,
@@ -81,7 +81,7 @@ const resolvers = {
       }
       throw AuthenticationError;
     },
-    removeworkout: async (parent, { workoutId }, context) => {
+    removeWorkout: async (parent, { workoutId }, context) => {
       if (context.user) {
         const workout = await Workout.findOneAndDelete({
           _id: workoutId,
