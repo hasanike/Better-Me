@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const WorkoutList = () => {
     const [loggedIn, setLoggedIn] = useState(false);
 
-    const handleSignIn = () => {
+    const handleSignIn= () => {
         // Simulated sign-in logic (replace with your actual sign-in logic)
         // For demonstration purposes, simply setting loggedIn to true
         setLoggedIn(true);
