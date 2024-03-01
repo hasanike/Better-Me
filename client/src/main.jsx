@@ -17,12 +17,19 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <WorkoutList />
-      }, 
-        {
+      }, {
+        path: '/login',
+        element: <Login />
+      }, {
+        path: '/signup',
+        element: <Signup />
+      }, {
+        path: '/profiles/:username',
+        element: <Profile />
+      }, {
         path: '/workouts/:workoutId',
         element: <WorkoutDetail />
-       }, 
-        {
+      }, {
         path: '/exercises',
         element: <ExerciseList />
       }, {
