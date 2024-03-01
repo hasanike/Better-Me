@@ -6,6 +6,7 @@ import WorkoutList from './pages/WorkoutList';
 import WorkoutDetail from './pages/WorkoutDetail';
 import ExerciseList from './pages/ExerciseList';
 import ExerciseDetails from './pages/ExerciseDetails';
+import Login from './pages/Login';
 // import ErrorPage from './pages/ErrorPage';
 
 const router = createBrowserRouter([
@@ -17,12 +18,19 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <WorkoutList />
-      }, 
-        {
+      }, {
+        path: '/Login',
+        element: <Login />
+      }, {
+        path: '/signup',
+        element: <Signup />
+      }, {
+        path: '/profiles/:username',
+        element: <Profile />
+      }, {
         path: '/workouts/:workoutId',
         element: <WorkoutDetail />
-       }, 
-        {
+      }, {
         path: '/exercises',
         element: <ExerciseList />
       }, {

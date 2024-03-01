@@ -1,8 +1,8 @@
-const mongoose = require('mongoose');
+const {Schema, model} = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
 // Define a Workout Schema
-const workoutSchema = new mongoose.Schema({
+const workoutSchema = new Schema({
   date: {
     type: Date,
     default: Date.now,
@@ -30,11 +30,30 @@ const workoutSchema = new mongoose.Schema({
   }],
   notes: {
     type: String
-  }
+  },
+  comments: [
+    {
+      commentText: {
+        type: String,
+        required: true,
+        minlength: 1,
+        maxlength: 280,
+      },
+      commentAuthor: {
+        type: String,
+        required: true,
+      },
+      createdAt: {
+        type: Date,
+        default: Date.now,
+        get: (timestamp) => dateFormat(timestamp),
+      },
+    },
+  ],
 });
 
 // Create a Workout Model
-const Workout = mongoose.model('Workout', workoutSchema);
+const Workout = model('Workout', workoutSchema);
 
 module.exports = Workout;
 

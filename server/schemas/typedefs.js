@@ -46,6 +46,8 @@ const typeDefs = `
     addExercise(workoutId: ID!, exerciseName: String!, sets: Int!, reps: Int!, weight: String!): Exercise
     removeWorkout(workoutId: ID!): Workout
     removeExercise(workoutId: ID!, exerciseId: ID!): Workout
+    addComment(workoutId: ID!, commentText: String!): Workout
+    removeComment(workoutId: ID!, commentId: ID!): Workout
   }
 `;
 
