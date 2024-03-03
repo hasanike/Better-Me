@@ -28,9 +28,9 @@ const router = createBrowserRouter([
       }, {
         path: '/signup',
         element: <SignUp />
-      // }, {
-      //   path: '/profiles/:username',
-      //   element: <Profile />
+        // }, {
+        //   path: '/profiles/:username',
+        //   element: <Profile />
       }, {
         path: '/workouts/:workoutId',
         element: <WorkoutDetail />
@@ -40,7 +40,7 @@ const router = createBrowserRouter([
       }, {
         path: '/exercises/:exerciseId',
         element: <ExerciseDetails />
-      },{
+      }, {
         path: '/workoutlist',
         element: <WorkoutList />
       }
