@@ -1,9 +1,9 @@
-# Workout-tracker
+# Better-Me
 
 ## Description 
 Better Me is a fitness based webpage giving users the ability to find, share, and track workouts with other users. 
 ## Table of Contents
-- [Workout-tracker](#workout-tracker)
+- [Better-Me](#better-me)
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Acceptance Criteria](#acceptance-criteria)
