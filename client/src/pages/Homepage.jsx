@@ -208,7 +208,7 @@ ResponsiveContainer.propTypes = {
   children: PropTypes.node,
 }
 
-const HomepageLayout = () => (
+const Home = () => (
   <ResponsiveContainer>
     <Segment style={{ padding: '8em 0em' }} vertical>
       <Grid container stackable verticalAlign='middle'>
@@ -337,4 +337,4 @@ const HomepageLayout = () => (
   </ResponsiveContainer>
 )
 
-export default HomepageLayout
+export default Home

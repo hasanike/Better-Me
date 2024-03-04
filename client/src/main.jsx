@@ -9,7 +9,7 @@ import ExerciseList from './pages/ExerciseList';
 import ExerciseDetails from './pages/ExerciseDetails';
 import SignUp from './pages/SignUp.jsx';
 import Login from './pages/Login.jsx';
-import Home from './pages/Home.jsx';
+import Home from './pages/Homepage.jsx'
 // import ErrorPage from './pages/ErrorPage';
 
 const router = createBrowserRouter([
