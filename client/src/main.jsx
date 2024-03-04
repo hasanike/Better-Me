@@ -10,6 +10,7 @@ import ExerciseDetails from './pages/ExerciseDetails';
 import SignUp from './pages/SignUp.jsx';
 import Login from './pages/Login.jsx';
 import Home from './pages/Home.jsx';
+// import Profile from '/pages/Profile.jsx'
 // import ErrorPage from './pages/ErrorPage';
 
 const router = createBrowserRouter([
@@ -27,9 +28,9 @@ const router = createBrowserRouter([
       }, {
         path: '/signup',
         element: <SignUp />
-        // }, {
-        //   path: '/profiles/:username',
-        //   element: <Profile />
+        }, {
+          path: '/profiles/:username',
+          element: <Profile />
       }, {
         path: '/workouts/:workoutId',
         element: <WorkoutDetail />
