@@ -58,17 +58,6 @@ const SignUp = () => {
                 <div className="mb-3">
                   <input
                     className="form-control"
-                    placeholder="Your username"
-                    name="username"
-                    type="text"
-                    value={formState.name}
-                    onChange={handleChange}
-                  />
-                </div>
-                <br></br>
-                <div className="mb-3">
-                  <input
-                    className="form-control"
                     placeholder="Your email"
                     name="email"
                     type="email"
