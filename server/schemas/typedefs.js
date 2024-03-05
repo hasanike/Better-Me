@@ -19,7 +19,7 @@ const typeDefs = `
 
   type Exercise {
     _id: ID
-    exerciseName: String
+    name: String
     sets: Int
     reps: Int
     weight: String
