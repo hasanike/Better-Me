@@ -1,6 +1,6 @@
 import 'semantic-ui-css/semantic.min.css'
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App.jsx';
 import WorkoutList from './pages/WorkoutList';
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     // errorElement: <ErrorPage />,
     children: [
       {
-        index: `/home`,
+        index: true,
         element: <Home />
       }, {
         path: '/login',
@@ -41,7 +41,7 @@ const router = createBrowserRouter([
         path: '/exercises/:exerciseId',
         element: <ExerciseDetails />
       }, {
-        path: '/workoutlist',
+        path: '/workouts',
         element: <WorkoutList />
       }
     ]
