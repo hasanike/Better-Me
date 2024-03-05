@@ -1,36 +1,77 @@
-import React, { useState } from 'react';
+import React from 'react'
+import { Container, Divider, Grid, Header, Icon } from 'semantic-ui-react'
 
-const WorkoutList = () => {
-    const [loggedIn, setLoggedIn] = useState(false);
+// Ported from the amazing codepen by Alexei Popkov.
+// https://codepen.io/Reystleen/pen/oydqxz
 
-    const handleSignIn= () => {
-        // Simulated sign-in logic (replace with your actual sign-in logic)
-        // For demonstration purposes, simply setting loggedIn to true
-        setLoggedIn(true);
-        console.log("Signed in successfully!");
-    };
+const AnotherGridLayout = () => (
+  <Container>
+    {/* Heads up! We apply there some custom styling, you usually will not need it. */}
+    <style>
+      {`
+      html, body {
+        background-color: #252839 !important;
+      }
 
-    const handleLogout = () => {
-        // Simulated logout logic (replace with your actual logout logic)
-        // For demonstration purposes, simply setting loggedIn to false
-        setLoggedIn(false);
-        console.log("Logged out successfully!");
-    };
+      p {
+        align-content: center;
+        background-color: #495285;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 6em;
+      }
 
-    return (
-        <div className="workout-list-page">
-            <h1>Workout List</h1>
-            <p>This is the workout list page.</p>
-            <div className="buttons-container">
-                {!loggedIn ? (
-                    <button onClick={handleSignIn}>Sign In</button>
-                ) : (
-                    <button onClick={handleLogout}>Logout</button>
-                )}
-                {/* Add more buttons for other actions */}
-            </div>
-        </div>
-    );
-};
+      p > span {
+        opacity: 0.4;
+        text-align: center;
+      }
+    }
+    `}
+    </style>
 
-export default WorkoutList;
+
+
+<style>
+{`
+.ui.grid.divided:not([class*="vertically divided"]) > .row > .column {
+  box-shadow: -1px 0 0 0 #d4d4d4;
+}
+
+.ui[class*="vertically divided"].grid > .row:before {
+  box-shadow: 0 -1px 0 0 rgba(212, 212, 212, 1.0);
+}
+`}
+</style>
+<Header as='h2' inverted textAlign='center'>
+Divided
+</Header>
+<Grid columns={3} divided>
+<Grid.Row>
+  <Grid.Column>
+    <p />
+  </Grid.Column>
+  <Grid.Column>
+    <p />
+  </Grid.Column>
+  <Grid.Column>
+    <p />
+  </Grid.Column>
+</Grid.Row>
+<Grid.Row>
+  <Grid.Column>
+    <p />
+  </Grid.Column>
+  <Grid.Column>
+    <p />
+  </Grid.Column>
+  <Grid.Column>
+    <p />
+  </Grid.Column>
+</Grid.Row>
+</Grid>
+</Container>
+)
+
+export default AnotherGridLayout
