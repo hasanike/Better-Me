@@ -19,6 +19,7 @@
   "dependencies": {
     "@artsy/fresnel": "^7.1.4",
     "react-intersection-observer": "^9.8.1",
+    "run": "^1.5.0",
     "semantic-ui-css": "^2.5.0",
     "semantic-ui-react": "^2.1.5"
   }

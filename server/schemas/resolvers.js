@@ -9,7 +9,7 @@ const resolvers = {
     user: async (parent, { username }) => {
       return User.findOne({ username }).populate('workouts');
     },
-    workout: async (parent, { username }) => {
+    workouts: async (parent, { username }) => {
       const params = username ? { username } : {};
       return Workout.find(params).sort({ createdAt: -1 });
     },

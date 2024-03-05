@@ -28,7 +28,10 @@ const workoutSchema = new Schema({
       type: Number
     }
   }],
-  notes: {
+  workoutDescription: {
+    type: String
+  },
+  workoutName: {
     type: String
   },
   comments: [

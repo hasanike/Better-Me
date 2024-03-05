@@ -17,7 +17,8 @@
         "duration": null
       }
     ],
-    "notes": "A good workout session!"
+    "workoutDescription": "A good workout session!",
+    "workoutName": "Cardio"
   },
   {
     "date": "2024-02-29T12:34:56.789Z",
@@ -37,7 +38,8 @@
         "duration": null
       }
     ],
-    "notes": "Focused on upper body strength!"
+    "workoutDescription": "Focused on upper body strength!",
+    "workoutName": "Lifting"
   },
   {
     "date": "2024-02-29T12:34:56.789Z",
@@ -57,7 +59,8 @@
         "duration": 45
       }
     ],
-    "notes": "Cardio and flexibility workout."
+    "workoutDescription": "Cardio and flexibility workout.",
+    "workoutName":"Conditioning"
   },
   {
     "date": "2024-02-29T12:34:56.789Z",
@@ -70,7 +73,8 @@
         "duration": 60
       }
     ],
-    "notes": "Outdoor cycling for endurance."
+    "workoutDescription": "Outdoor cycling for endurance.",
+    "workoutName": "Cardio"
   },
   {
     "date": "2024-02-29T12:34:56.789Z",
@@ -90,7 +94,8 @@
         "duration": null
       }
     ],
-    "notes": "Core workout routine."
+    "workoutDescription": "Core workout routine.",
+    "workoutName": "Conditioning"
   },
   {
     "date": "2024-02-29T12:34:56.789Z",
@@ -103,7 +108,8 @@
         "duration": null
       }
     ],
-    "notes": "High-intensity cardio with jump rope."
+    "workoutDescription": "High-intensity cardio with jump rope.",
+    "workoutName": "Cardio"
   },
   {
     "date": "2024-02-29T12:34:56.789Z",
@@ -116,7 +122,8 @@
         "duration": 45
       }
     ],
-    "notes": "Swimming laps for full-body workout."
+    "workoutDescription": "Swimming laps for full-body workout.",
+    "workoutName": "Conditioning"
   },
   {
     "date": "2024-02-29T12:34:56.789Z",
@@ -129,7 +136,8 @@
         "duration": 15
       }
     ],
-    "notes": "Indoor rowing for upper body strength."
+    "workoutDescription": "Indoor rowing for upper body strength.",
+    "workoutName": "Conditioning"
   },
   {
     "date": "2024-02-29T12:34:56.789Z",
@@ -142,7 +150,8 @@
         "duration": 20
       }
     ],
-    "notes": "Mindfulness and relaxation session."
+    "workoutDescription": "Mindfulness and relaxation session.",
+    "workoutName": "Conditioning"
   },
   {
     "date": "2024-02-29T12:34:56.789Z",
@@ -155,6 +164,7 @@
         "duration": 30
       }
     ],
-    "notes": "Boxing drills for cardio and strength."
+    "workoutDescription": "Boxing drills for cardio and strength.",
+    "workoutName": "Cardio"
   }
 ]
