@@ -39,44 +39,57 @@ const SignUp = () => {
   };
 
   return (
-    <main className="flex-row justify-center mb-4">
-      <div className="col-12 col-lg-10">
-        <div className="card">
-          <h4 className="card-header bg-dark text-light p-2">Sign Up</h4>
-          <div className="card-body">
+    <main className="flex-row justify-center align-items-center vh-100">
+      <div className="col-12 col-lg-6">
+        <div className="card border-0">
+        <h4 className="card-header bg-dark text-light p-3" style={{ fontSize: '36px' }}>
+        Sign up for "Better Me" today!!
+        </h4>
+          <div className="card-body p-4">
             {data ? (
-              <p>
+              <p className="text-success mb-4">
                 Success! You may now head{' '}
-                <Link to="/">back to the homepage.</Link>
+                <Link to="/" className="text-primary">
+                  back to the homepage.
+                </Link>
               </p>
             ) : (
               <form onSubmit={handleFormSubmit}>
-                <input
-                  className="form-input"
-                  placeholder="Your username"
-                  name="username"
-                  type="text"
-                  value={formState.name}
-                  onChange={handleChange}
-                />
-                <input
-                  className="form-input"
-                  placeholder="Your email"
-                  name="email"
-                  type="email"
-                  value={formState.email}
-                  onChange={handleChange}
-                />
-                <input
-                  className="form-input"
-                  placeholder="******"
-                  name="password"
-                  type="password"
-                  value={formState.password}
-                  onChange={handleChange}
-                />
+                <div className="mb-3">
+                  <input
+                    className="form-control"
+                    placeholder="Your username"
+                    name="username"
+                    type="text"
+                    value={formState.name}
+                    onChange={handleChange}
+                  />
+                </div>
+                <br></br>
+                <div className="mb-3">
+                  <input
+                    className="form-control"
+                    placeholder="Your email"
+                    name="email"
+                    type="email"
+                    value={formState.email}
+                    onChange={handleChange}
+                  />
+                </div>
+                <br></br>
+                <div className="mb-3">
+                  <input
+                    className="form-control"
+                    placeholder="******"
+                    name="password"
+                    type="password"
+                    value={formState.password}
+                    onChange={handleChange}
+                  />
+                </div>
+                <br></br>
                 <button
-                  className="btn btn-block btn-primary"
+                  className="btn btn-primary btn-block mb-3"
                   style={{ cursor: 'pointer' }}
                   type="submit"
                 >
