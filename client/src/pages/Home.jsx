@@ -53,10 +53,7 @@ const HomepageHeading = ({ mobile }) => (
         marginTop: mobile ? '0.5em' : '1.5em',
       }}
     />
-    <Button primary size='huge'>
-      Get Started
-      <Icon name='right arrow' />
-    </Button>
+
   </Container>
 )
 HomepageHeading.propTypes = {
@@ -183,11 +180,11 @@ const HomepageLayout = () => (
               We help make dreams come true...
             </Header>
             <p style={{ fontSize: '1.33em' }}>
-              When you were a child, not a single person told you that you couldnt do what you wanted. Why let them now!?
+              When you were a child, not a single person told you that you couldn't do what you wanted. Why let them now!?
             </p>
           </Grid.Column>
           <Grid.Column floated='right' width={6}>
-            <Image bordered rounded size='large' src='/images/wireframe/white-image.png' />
+            <Image bordered rounded size='large' src='client/public/Assets/Dumbbells-568094543df78ccc15a5b493.webp' />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
